@@ -35,8 +35,8 @@ public class HttpClientServiceUtil {
 	 // HTTP GET request
 	 public void sendingGetRequest(String url) throws Exception {
 	  
-		URL url = new URL(urlString);
-		HttpURLConnection con = (HttpURLConnection) url.openConnection();
+		URL obj = new URL(url);
+		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 
 		// By default it is GET request
 		con.setRequestMethod("GET");
